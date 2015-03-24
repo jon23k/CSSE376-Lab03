@@ -13,7 +13,6 @@ public class PrimeFactorsTest {
 	}
 
 	private List<Integer> list() {
-		// TODO Auto-generated method stub
 		return Arrays.asList();
 	}
 
