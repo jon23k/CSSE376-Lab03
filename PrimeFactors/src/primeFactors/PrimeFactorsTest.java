@@ -22,5 +22,10 @@ public class PrimeFactorsTest {
 	}
 
 	
+	@Test
+	public void testThree() throws Exception {
+		assertEquals(list(3), PrimeFactors.generate(3));
+	}
+	
 
 }
