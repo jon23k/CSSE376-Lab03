@@ -8,13 +8,12 @@ public class PrimeFactors
 
 	public static List<Integer> generate(int i) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
-		for(;i%2==0; i/= 2)
+		for(int candidate = 2;i > 1;candidate++)
 		{
-			primes.add(2);
-		}
-		if(i>1)
-		{
-			primes.add(i);
+			for(;i%candidate==0; i/= candidate)
+			{
+				primes.add(candidate);
+			}
 		}
 		return primes;
 	}
