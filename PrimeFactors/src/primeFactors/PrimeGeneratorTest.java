@@ -17,5 +17,14 @@ public class PrimeGeneratorTest {
 	public void testOne() {
 		assertEquals(list(), PrimeGenerator.generate(1));
 	}
+	
+	@Test
+	public void testTwo() {
+		assertEquals(list(1), PrimeGenerator.generate(2));
+	}
+	
+
+	
+	
 
 }

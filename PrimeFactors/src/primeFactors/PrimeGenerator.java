@@ -6,7 +6,12 @@ import java.util.List;
 
 public class PrimeGenerator {
 	public static List<Integer> generate(int i) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> primes =new ArrayList<Integer>();
+		if(i != 1)
+		{
+			primes.add(1);
+		}
+		return primes;
 	}
 
 }
