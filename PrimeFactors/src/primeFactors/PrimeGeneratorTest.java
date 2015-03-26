@@ -32,4 +32,9 @@ public class PrimeGeneratorTest {
 	public void testFive() {
 		assertEquals(list(1,2,3), PrimeGenerator.generate(5));
 	}
+	
+	@Test
+	public void testEight() {
+		assertEquals(list(1,2,3,5,7), PrimeGenerator.generate(8));
+	}
 }
