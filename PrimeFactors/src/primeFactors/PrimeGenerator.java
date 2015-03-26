@@ -11,13 +11,28 @@ public class PrimeGenerator {
 		{
 			primes.add(1);
 		}
-		if(i>2)
+		for(int x=0;x<i;x++)
 		{
-			primes.add(2);
+			if(isPrime(x))
+			{
+				primes.add(x);
+			}
 		}
-		
 		return primes;
-
 	}
+	
+	private static boolean isPrime(int i) {
+		int factors = 0;
+        int j = 1;
 
+        while(j <= i)
+        {
+            if(i % j == 0)
+            {
+                factors++;
+            }
+            j++;
+        }
+        return (factors == 2);
+  }
 }
