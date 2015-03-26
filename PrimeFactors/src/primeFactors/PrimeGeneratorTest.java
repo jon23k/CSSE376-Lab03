@@ -37,4 +37,9 @@ public class PrimeGeneratorTest {
 	public void testEight() {
 		assertEquals(list(1,2,3,5,7), PrimeGenerator.generate(8));
 	}
+	
+	@Test
+	public void testThirteen() {
+		assertEquals(list(1,2,3,5,7,11), PrimeGenerator.generate(13));
+	}
 }
