@@ -23,8 +23,10 @@ public class PrimeGeneratorTest {
 		assertEquals(list(1), PrimeGenerator.generate(2));
 	}
 	
+	@Test
+	public void testThree() {
+		assertEquals(list(1,2), PrimeGenerator.generate(3));
+	}
 
-	
-	
 
 }
